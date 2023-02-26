@@ -1,11 +1,11 @@
-package com.syntomic.ffi;
+package cn.syntomic.ffi;
 
 /** Foreign function interface demo */
 public class FFIDemo {
 
     static {
         System.load(System.getenv("LIBPYTHON"));
-        System.load(String.format("%s/output/com_syntomic_ffi_FFIDemo.dylib", System.getProperty("user.dir")));
+        System.load(String.format("%s/FFIDemo.dylib", System.getProperty("user.dir")));
     }
 
     public static void main(String[] args) {
